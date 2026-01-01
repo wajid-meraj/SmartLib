@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartLib - AI-Powered E-Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                    <span>SmartLib</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#library">Library</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#ai-search">AI Search</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Discover Knowledge with AI-Powered Search</h1>
+            <p>SmartLib combines traditional library resources with cutting-edge AI to help you find exactly what you're looking for, faster and more accurately.</p>
+            <div class="search-container">
+                <input type="text" class="search-box" id="mainSearch" placeholder="Ask our AI anything about books, research, or topics...">
+                <button class="search-btn" id="searchButton">Search</button>
+            </div>
+            <div class="search-suggestions">
+                <span>Try: </span>
+                <a href="#">machine learning basics</a>
+                <a href="#">recent physics research</a>
+                <a href="#">python programming</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose SmartLib?</h2>
+                <p>Our platform offers a unique combination of traditional library services and advanced AI capabilities</p>
+            </div>
+            <div class="features-grid" id="featuresGrid">
+                <!-- Features will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section class="books" id="library">
+        <div class="container">
+            <div class="books-header">
+                <h2>Popular Books</h2>
+                <div class="filter-options">
+                    <select class="filter-select" id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="science">Science</option>
+                        <option value="technology">Technology</option>
+                        <option value="history">History</option>
+                    </select>
+                    <select class="filter-select" id="sortFilter">
+                        <option value="popularity">Sort by Popularity</option>
+                        <option value="newest">Sort by Newest</option>
+                        <option value="rating">Sort by Rating</option>
+                    </select>
+                </div>
+            </div>
+            <div class="books-grid" id="booksGrid">
+                <!-- Books will be loaded dynamically -->
+            </div>
+            <div class="load-more">
+                <button class="btn btn-outline" id="loadMoreBtn">Load More Books</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features Section -->
+    <section class="ai-features" id="ai-search">
+        <div class="container">
+            <div class="section-title">
+                <h2>Advanced AI Features</h2>
+                <p>Our AI engine goes beyond simple search to provide intelligent assistance</p>
+            </div>
+            <div class="ai-features-grid" id="aiFeaturesGrid">
+                <!-- AI Features will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SmartLib</h3>
+                    <p>The next-generation e-library system powered by artificial intelligence for enhanced discovery and learning.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#library">Library Catalog</a></li>
+                        <li><a href="#ai-search">AI Search</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#">My Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Research Guides</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Library Street, City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@smartlib.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 SmartLib - E-Library System with AI Search Engine. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to SmartLib</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Join SmartLib</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/books.js"></script>
+</body>
+</html>
