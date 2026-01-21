@@ -27,6 +27,18 @@ const books = [
         language: 'English',
         isbn: '978-0987654321'
     }
+    {
+        id: 3,
+        title: 'Digital ',
+        author: 'Sarah Johnson',
+        category: 'technology',
+        rating: 4.5,
+        year: 2022,
+        description: 'Exploring how digital technologies are reshaping businesses and industries.',
+        pages: 280,
+        language: 'English',
+        isbn: '978-0987654321'
+    }
 ];
 
 // GET /api/books - Get all books with optional filtering
