@@ -16,6 +16,19 @@ let books = [
         isbn: '978-1234567890',
         createdAt: new Date('2023-01-15')
     },
+        {
+        id: 3,
+        title: 'Digital Age Economics',
+        author: 'Michael Chen',
+        category: 'economics',
+        rating: 4.3,
+        year: 2023,
+        description: 'Economic theories and practices in the digital era.',
+        pages: 310,
+        language: 'English',
+        isbn: '978-1122334455',
+        createdAt: new Date('2023-06-10')
+    }
     {
         id: 2,
         title: 'Digital Transformation',
