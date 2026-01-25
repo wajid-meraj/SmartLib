@@ -30,7 +30,7 @@ let books = [
         createdAt: new Date('2023-06-10')
     }
       {
-        id: 1,
+        id: 3,
         title: 'The AI Revolution',
         author: 'Dr. Alan Turing',
         category: 'science',
@@ -43,7 +43,7 @@ let books = [
         createdAt: new Date('2023-01-15')
     },
     {
-        id: 2,
+        id: 4,
         title: 'Digital Transformation',
         author: 'Sarah Johnson',
         category: 'technology',
@@ -56,7 +56,7 @@ let books = [
         createdAt: new Date('2022-03-20')
     },
     {
-        id: 3,
+        id: 5,
         title: 'Digital Age Economics',
         author: 'Michael Chen',
         category: 'economics',
