@@ -17,7 +17,7 @@ let books = [
         createdAt: new Date('2023-01-15')
     },
         {
-        id: 3,
+        id: 2,
         title: 'Digital Age Economics',
         author: 'Michael Chen',
         category: 'economics',
