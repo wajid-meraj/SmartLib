@@ -99,6 +99,14 @@ const sampleBooks = [
         coverColor: '#b5179e',
         year: 2023
     }
+    {
+        id: 9,
+        title: 'Artificial Intelligence Ethics',
+        author: 'Dr. Lisa Anderson',
+        category: 'ethics',
+        rating: 4.8,
+        coverColor: '#b5179e',
+        year: 2023
 ];
 
 let currentBooks = [...sampleBooks];
