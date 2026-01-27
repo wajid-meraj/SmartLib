@@ -37,6 +37,15 @@ const sampleBooks = [
         year: 2023
     },
     {
+        id: 21,
+        title: 'The AI Revolution',
+        author: 'Dr. Alan Turing',
+        category: 'science',
+        rating: 4.8,
+        coverColor: '#4361ee',
+        year: 2023
+    },
+    {
         id: 2,
         title: 'Digital Transformation',
         author: 'Sarah Johnson',
