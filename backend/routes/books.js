@@ -16,6 +16,19 @@ let books = [
         isbn: '978-1234567890',
         createdAt: new Date('2023-01-15')
     },
+     {
+        id: 1,
+        title: 'The AI Revolution',
+        author: 'Dr. Alan Turing',
+        category: 'science',
+        rating: 4.8,
+        year: 2023,
+        description: 'A comprehensive guide to artificial intelligence and its impact on society.',
+        pages: 320,
+        language: 'English',
+        isbn: '978-1234567890',
+        createdAt: new Date('2023-01-15')
+    },
         {
         id: 2,
         title: 'Digital Age Economics',
