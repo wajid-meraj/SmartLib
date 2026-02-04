@@ -36,6 +36,7 @@ const sampleBooks = [
         coverColor: '#4361ee',
         year: 2023
     },
+    
     {
         id: 21,
         title: 'The AI Revolution',
